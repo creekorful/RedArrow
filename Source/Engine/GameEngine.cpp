@@ -44,3 +44,8 @@ void GameEngine::execute()
         m_stateManager.draw(m_window);
     }
 }
+
+void GameEngine::setActiveState(GameState* pState)
+{
+    m_stateManager.setActiveState(pState);
+}

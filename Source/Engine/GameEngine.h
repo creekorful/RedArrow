@@ -2,6 +2,7 @@
 #define REDARROW_GAMEENGINE_H
 
 #include "StateManager.h"
+#include "GameState.h"
 
 class GameEngine
 {
@@ -13,6 +14,8 @@ public:
     bool isRunning();
 
     void execute();
+
+    void setActiveState(GameState* pState);
 
 private:
     StateManager m_stateManager;

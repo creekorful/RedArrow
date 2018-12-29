@@ -3,6 +3,7 @@
 
 #include <SFML/Window/Event.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
+#include "GameState.h"
 
 class StateManager
 {
@@ -16,6 +17,11 @@ public:
     void update(float dt);
 
     void draw(sf::RenderWindow& window);
+
+    void setActiveState(GameState* pState);
+
+private:
+    GameState* m_pActiveState;
 };
 
 
