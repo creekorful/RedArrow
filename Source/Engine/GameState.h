@@ -7,9 +7,12 @@
 class GameState
 {
 public:
+
     virtual void initialize() = 0;
 
     virtual void cleanup() = 0;
+
+    virtual std::string title() const = 0;
 
     /*virtual void pause() = 0;
 

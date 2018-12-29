@@ -6,7 +6,7 @@
 class GameEngine
 {
 public:
-    GameEngine();
+    GameEngine(sf::VideoMode mode, const std::string& title);
 
     ~GameEngine();
 
@@ -16,6 +16,7 @@ public:
 
 private:
     StateManager m_stateManager;
+    sf::RenderWindow m_window;
 };
 
 

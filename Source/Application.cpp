@@ -1,6 +1,6 @@
 #include "Application.h"
 
-Application::Application(int argc, char** argv)
+Application::Application(int argc, char** argv) : m_gameEngine(sf::VideoMode(800, 600), "RedArrow")
 {
 
 }
