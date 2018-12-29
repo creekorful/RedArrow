@@ -18,6 +18,12 @@ public:
     void update(float dt) override;
 
     void draw(sf::RenderWindow& window) override;
+
+    static MainMenuState &instance()
+    {
+        static MainMenuState instance;
+        return instance;
+    }
 };
 
 
