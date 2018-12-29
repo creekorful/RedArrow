@@ -1,7 +1,7 @@
-#include <iostream>
+#include "Application.h"
 
 int main(int argc, char** argv)
 {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    auto application = new Application(argc, argv);
+    return application->execute();
 }
