@@ -47,5 +47,6 @@ void GameEngine::execute()
 
 void GameEngine::setActiveState(GameState* pState)
 {
+    m_window.setTitle(pState->title());
     m_stateManager.setActiveState(pState);
 }

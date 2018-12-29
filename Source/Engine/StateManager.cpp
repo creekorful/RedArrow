@@ -36,6 +36,6 @@ void StateManager::draw(sf::RenderWindow& window)
 
 void StateManager::setActiveState(GameState* pState)
 {
-    // todo cleanup old scene if any ?
+    // todo cleanup ?
     m_pActiveState = pState;
 }
