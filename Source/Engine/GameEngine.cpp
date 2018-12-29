@@ -3,6 +3,9 @@
 GameEngine::GameEngine(sf::VideoMode mode, const std::string& title) : m_window(mode, title)
 {
     m_stateManager.initialize();
+
+    // configure window
+    m_window.setFramerateLimit(60);
 }
 
 GameEngine::~GameEngine()

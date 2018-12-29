@@ -8,6 +8,6 @@ find_package(SFML REQUIRED COMPONENTS graphics window system)
 
 include_directories(${SFML_INCLUDE_DIR})
 
-add_executable(RedArrow Source/main.cpp Source/Engine/GameState.cpp Source/Engine/GameState.h Source/Engine/StateManager.cpp Source/Engine/StateManager.h Source/Engine/GameEngine.cpp Source/Engine/GameEngine.h Source/Application.cpp Source/Application.h)
+add_executable(RedArrow Source/main.cpp Source/Engine/GameState.cpp Source/Engine/GameState.h Source/Engine/StateManager.cpp Source/Engine/StateManager.h Source/Engine/GameEngine.cpp Source/Engine/GameEngine.h Source/Game/Application.cpp Source/Game/Application.h Source/Game/States/MainMenuState.cpp Source/Game/States/MainMenuState.h)
 
 target_link_libraries(RedArrow ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
